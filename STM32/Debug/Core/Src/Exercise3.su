@@ -1,0 +1,4 @@
+Exercise3.c:10:6:redLight	8	static
+Exercise3.c:25:6:yellowLight	8	static
+Exercise3.c:40:6:greenLight	8	static
+Exercise3.c:55:6:Run_Ex3	16	static

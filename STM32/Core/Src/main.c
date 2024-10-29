@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "Exercise3.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,7 +42,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+	int state = 0;
+	int count = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -91,19 +92,10 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, SET);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, SET);
   while (1)
   {
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_7);
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-	  HAL_Delay(5000);
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
-	  HAL_Delay(2000);
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_7);
-	  HAL_Delay(3000);
+	  Run_Ex3(&state, &count);
+	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
