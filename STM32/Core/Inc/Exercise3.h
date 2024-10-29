@@ -10,6 +10,7 @@
 
 #include "main.h"
 
+void display7SEG(int num);
 void redLight();
 void yellowLight();
 void greenLight();
