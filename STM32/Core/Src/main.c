@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "Exercise3.h"
+#include "Exercise6to10.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,8 +43,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-	int state = 0;
-	int count = 0;
+	int hour = 2;
+	int minute = 59;
+	int second = 45;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -94,7 +96,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  Run_Ex3(&state, &count);
+	  displayClock(&hour, &minute, &second);
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
